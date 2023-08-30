@@ -157,7 +157,7 @@ public class AppCenterDownloader {
 
         JSONObject selectedRelease = null;
 
-        if (version == null && shortVersion == null) {
+        if ((version == null || version.isEmpty()) && (shortVersion == null || shortVersion.isEmpty())) {
             selectedRelease = body.getJSONObject(0); // Assuming the first release is the latest
         } else {
             for (int i = 0; i < body.length(); i++) {
