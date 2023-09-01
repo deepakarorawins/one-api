@@ -148,7 +148,6 @@ public class AppCenterDownloader {
         } catch (Exception e) {
             logger.error("Error occurred while fetching app release id for app download.", e);
         }
-
         return appDetails;
     }
 
